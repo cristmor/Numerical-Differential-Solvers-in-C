@@ -11,7 +11,7 @@ This repository contains a set of basic numerical differential solvers implement
 
 ## Usage
 
-To use these solvers in your C program, simply include the corresponding header file found in this repository and follow the exsample shown below or in the test.c file:
+To use these solvers in your C program, simply include the corresponding header file found in this repository and follow the example shown below or in the test.c file:
 
 ```c
 #include "numerical_solvers.h"
