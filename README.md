@@ -11,9 +11,22 @@ This repository contains a set of basic numerical differential solvers implement
 
 ## Usage
 
-To use these solvers in your C program, simply include the corresponding header file for the method you wish to use. For example, to use the forward difference method:
+To use these solvers in your C program, simply include the corresponding header file found in this repository and follow the exsample shown below or in the test.c file:
 
 ```c
-#include "forward_difference.h"
+#include "numerical_solvers.h"
 
-// Your code here
+// Create custom function
+float customFunction(float x)
+{
+    return sin(x);
+}
+
+int main()
+{
+    // Initialize variables
+    int x = 1.0f; // Initial x value
+    int h = 0.01f; // Step size
+    // Calculate forward difference using customFunction, x, and h
+    float foward = forward(customFunction, x, h);
+}
